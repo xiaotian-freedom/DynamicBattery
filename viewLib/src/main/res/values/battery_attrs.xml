@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 大电池 -->
+    <declare-styleable name="BigBatteryView">
+        <!-- 电池边方向-->
+        <attr name="big_bv_orientation">
+            <enum name="to_left" value="0" />
+            <enum name="to_right" value="1" />
+            <enum name="to_up" value="2" />
+            <enum name="to_down" value="3" />
+        </attr>
+        <!-- 电池头的宽度 -->
+        <attr name="big_bv_header_width" format="dimension|reference" />
+        <!-- 电池头的高度 -->
+        <attr name="big_bv_header_height" format="dimension|reference" />
+        <!-- 电池头的颜色 -->
+        <attr name="big_bv_header_color" format="color|reference" />
+        <!-- 电池头的圆角 -->
+        <attr name="big_bv_header_corner" format="dimension|reference" />
+        <!-- 电池头与身体之间的距离 -->
+        <attr name="big_bv_header_margin" format="dimension|reference" />
+        <!-- 电池身体宽度 -->
+        <attr name="big_bv_body_width" format="dimension|reference" />
+        <!-- 电池身体高度 -->
+        <attr name="big_bv_body_height" format="dimension|reference" />
+        <!-- 电池身体圆角 -->
+        <attr name="big_bv_body_corner" format="dimension|reference" />
+        <!-- 电池身体背景色 -->
+        <attr name="big_bv_body_bg_color" format="color|reference" />
+        <!-- 电池身体电量色 -->
+        <attr name="big_bv_body_power_color" format="color|reference" />
+        <!-- 是否展示剩余电量文字 -->
+        <attr name="big_bv_show_power_text" format="boolean" />
+        <!-- 电量百分比文字大小 -->
+        <attr name="big_bv_percent_text_size" format="dimension|reference" />
+        <!-- 电量百分比文字颜色 -->
+        <attr name="big_bv_percent_text_color" format="color|reference" />
+        <!-- 电量提示文字大小 -->
+        <attr name="big_bv_tip_text_size" format="dimension|reference" />
+        <!-- 电量提示文字颜色 -->
+        <attr name="big_bv_tip_text_color" format="color|reference" />
+        <!-- 电量提示文字 -->
+        <attr name="big_bv_tip_text" format="string" />
+        <!-- 电量提示与电量百分比之间的距离 -->
+        <attr name="big_bv_text_margin" format="dimension|reference" />
+
+    </declare-styleable>
+
+</resources>

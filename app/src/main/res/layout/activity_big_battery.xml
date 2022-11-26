@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:theme="@style/Theme.DynamicBattery.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.DynamicBattery.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.storn.view.battery.BigBatteryView
+        android:id="@+id/bigBatteryView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:big_bv_body_bg_color="#F3F3F3"
+        app:big_bv_body_corner="23dp"
+        app:big_bv_body_height="300dp"
+        app:big_bv_body_power_color="@color/purple_500"
+        app:big_bv_body_width="140dp"
+        app:big_bv_header_color="#F3F3F3"
+        app:big_bv_header_corner="5dp"
+        app:big_bv_header_height="14dp"
+        app:big_bv_header_margin="5dp"
+        app:big_bv_header_width="56dp"
+        app:big_bv_orientation="to_up"
+        app:big_bv_percent_text_color="#333333"
+        app:big_bv_percent_text_size="26sp"
+        app:big_bv_show_power_text="true"
+        app:big_bv_text_margin="10dp"
+        app:big_bv_tip_text="剩余电量"
+        app:big_bv_tip_text_color="#333333"
+        app:big_bv_tip_text_size="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btStartAnim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始动画"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btResetAnim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:text="重置动画"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

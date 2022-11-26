@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.storn.dynamicbattery.MainActivity">
+    <item
+        android:id="@+id/menu_up"
+        android:title="头朝上"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_down"
+        android:title="头朝下"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_left"
+        android:title="头朝左"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_right"
+        android:title="头朝右"
+        app:showAsAction="never" />
+</menu>
